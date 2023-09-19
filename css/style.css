@@ -5,7 +5,6 @@ body {
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   max-width: 1920px;
-  overflow: hidden;
 }
 
 h1, h2, h3, h4, h5, p {
@@ -45,10 +44,10 @@ h2 {
   color: var(--black);
   height: 50px;
   margin-inline: auto;
-  max-width: 1400px;
+  max-width: 1540px;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-inline: 10px;
+  padding-inline: 30px;
 }
 
 .menu {
@@ -184,13 +183,16 @@ h2 {
 main {
   max-width: 1920px;
   margin-inline: auto;
-  height: 100vh !important;
+  max-height: 100vh !important;
+  overflow-x: hidden;
 }
 main .container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: center !important;
   flex-wrap: nowrap;
+  margin-inline: auto;
+  max-width: 1540px;
 }
 @media screen and (max-width: 850px) {
   main .container {
@@ -199,8 +201,9 @@ main .container {
 }
 main .container .textitem {
   align-self: center;
-  width: 50%;
-  margin-left: 5%;
+  width: 40%;
+  padding-left: 30px;
+  margin-right: 20px;
 }
 @media screen and (max-width: 850px) {
   main .container .textitem {
@@ -223,22 +226,6 @@ main .container .textitem button a, main .container .textitem button a:hover {
   text-transform: uppercase;
   color: var(--black);
   font-size: 16px;
-}
-@media screen and (min-width: 1200px) {
-  main .container .textitem {
-    width: 40%;
-  }
-}
-@media screen and (min-width: 1500px) {
-  main .container .textitem {
-    width: 30%;
-    margin-left: 10%;
-  }
-}
-@media screen and (max-width: 850px) {
-  main .container .textitem {
-    margin-left: 5%;
-  }
 }
 main .container .textitem h1 {
   font-size: 70px;
@@ -268,17 +255,108 @@ main .container .textitem p {
   }
 }
 main .container .imgitem img {
-  width: 100%;
+  width: 120%;
   max-height: 100vh;
   -webkit-clip-path: polygon(23% 0, 100% 0, 100% 100%, 0% 100%);
           clip-path: polygon(23% 0, 100% 0, 100% 100%, 0% 100%);
   -o-object-fit: contain;
      object-fit: contain;
   pointer-events: none;
+  /*mobile*/
 }
 @media screen and (max-width: 850px) {
   main .container .imgitem img {
     -webkit-clip-path: polygon(0 22%, 100% 0, 100% 100%, 0% 100%);
             clip-path: polygon(0 22%, 100% 0, 100% 100%, 0% 100%);
+  }
+}
+
+#vpn {
+  text-align: center;
+  max-width: 1540px;
+  height: 1000px;
+  position: relative;
+  padding-inline: 30px;
+  overflow: visible;
+  padding-top: 30px;
+}
+#vpn a {
+  text-decoration: none;
+}
+#vpn a h3 {
+  padding-top: 20px;
+  color: var(--green);
+}
+#vpn h1 {
+  font-weight: 100;
+  font-size: 50px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+#vpn p {
+  padding-bottom: 20px !important;
+  color: var(--green);
+}
+#vpn .container2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center !important;
+  max-height: 400px;
+  max-width: 1480px;
+  margin-inline: auto;
+  margin-top: 30px !important;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 1000px) {
+  #vpn .container2 {
+    flex-direction: column;
+    max-height: auto;
+  }
+}
+#vpn .container2 .textitem2 {
+  width: 50%;
+  background-color: var(--green);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 5% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 5% 100%);
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  padding-inline: 40px;
+}
+@media screen and (max-width: 1000px) {
+  #vpn .container2 .textitem2 {
+    -webkit-clip-path: none;
+            clip-path: none;
+    width: auto;
+    height: 50%;
+    padding-inline: 30px;
+  }
+}
+#vpn .container2 .textitem2 p {
+  text-align: justify;
+  color: var(--bg-white);
+}
+#vpn .container2 .imgitem2 {
+  width: 50%;
+}
+@media screen and (max-width: 1000px) {
+  #vpn .container2 .imgitem2 {
+    width: 100%;
+    height: 50%;
+    padding-bottom: 10px;
+  }
+}
+#vpn .container2 .imgitem2 img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 100%;
+  width: 100%;
+  -webkit-clip-path: polygon(0 0, 95% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 95% 0, 100% 100%, 0 100%);
+}
+@media screen and (max-width: 1000px) {
+  #vpn .container2 .imgitem2 img {
+    -webkit-clip-path: none;
+            clip-path: none;
   }
 }/*# sourceMappingURL=style.css.map */
