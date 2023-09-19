@@ -1,0 +1,82 @@
+#bestvpn {
+    text-align: center;
+    max-width: 1540px;
+    height:auto;
+    padding-inline: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    h1 {
+        font-size: 50px;
+        padding-bottom: 30px;
+    }
+
+
+.container3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center !important;
+    max-height: 400px;
+    max-width: 1480px;
+    margin-inline: auto;
+  
+
+    @media screen and (max-width: 1000px) {
+        flex-direction: column;
+        max-height: 100%;
+         }
+
+
+    .textitem3 {
+        width:50%;
+        background-color: var(--green);
+        clip-path: polygon(0 0, 95% 0, 100% 100%, 0 100%);
+        display: flex;
+        align-items: center;
+        padding: 30px;
+
+        @media screen and (max-width: 1000px) {
+            clip-path:none;
+            width: auto;
+            padding: 30px;
+
+             }
+
+
+        p {
+            text-align: justify;
+            color: var(--bg-white);
+
+        }
+
+    }
+
+
+    .imgitem3 {
+
+        width: 50%;
+
+        @media screen and (max-width: 1000px) {
+            width: 100%;
+            height: 50%;
+            margin-top: 10px;
+
+             }
+
+        img{
+        object-fit: contain;
+        max-height: 100%;
+        width:100%;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 5% 100%);
+
+
+        @media screen and (max-width: 1000px) {
+            clip-path:none;
+             }
+
+        }
+    }
+}
+
+
+}
