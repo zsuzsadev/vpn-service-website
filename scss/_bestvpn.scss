@@ -8,6 +8,7 @@
 
     h1 {
         font-size: 50px;
+        font-weight: 100;
         padding-bottom: 30px;
     }
 
@@ -24,6 +25,7 @@
     @media screen and (max-width: 1000px) {
         flex-direction: column;
         max-height: 100%;
+    max-width: 100%;
          }
 
 
@@ -34,11 +36,13 @@
         display: flex;
         align-items: center;
         padding: 30px;
+        padding-right:40px;
+
 
         @media screen and (max-width: 1000px) {
-            clip-path:none;
+            clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 100%);
             width: auto;
-            padding: 30px;
+            padding: 40px;
 
              }
 
@@ -48,7 +52,6 @@
             color: var(--bg-white);
 
         }
-
     }
 
 
@@ -59,7 +62,7 @@
         @media screen and (max-width: 1000px) {
             width: 100%;
             height: 50%;
-            margin-top: 10px;
+            margin-top: 5px;
 
              }
 
@@ -71,7 +74,7 @@
 
 
         @media screen and (max-width: 1000px) {
-            clip-path:none;
+            clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
              }
 
         }

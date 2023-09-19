@@ -370,6 +370,7 @@ main .container .imgitem img {
 }
 #bestvpn h1 {
   font-size: 50px;
+  font-weight: 100;
   padding-bottom: 30px;
 }
 #bestvpn .container3 {
@@ -384,6 +385,7 @@ main .container .imgitem img {
   #bestvpn .container3 {
     flex-direction: column;
     max-height: 100%;
+    max-width: 100%;
   }
 }
 #bestvpn .container3 .textitem3 {
@@ -394,13 +396,14 @@ main .container .imgitem img {
   display: flex;
   align-items: center;
   padding: 30px;
+  padding-right: 40px;
 }
 @media screen and (max-width: 1000px) {
   #bestvpn .container3 .textitem3 {
-    -webkit-clip-path: none;
-            clip-path: none;
+    -webkit-clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 100%);
     width: auto;
-    padding: 30px;
+    padding: 40px;
   }
 }
 #bestvpn .container3 .textitem3 p {
@@ -414,7 +417,7 @@ main .container .imgitem img {
   #bestvpn .container3 .imgitem3 {
     width: 100%;
     height: 50%;
-    margin-top: 10px;
+    margin-top: 5px;
   }
 }
 #bestvpn .container3 .imgitem3 img {
@@ -427,7 +430,7 @@ main .container .imgitem img {
 }
 @media screen and (max-width: 1000px) {
   #bestvpn .container3 .imgitem3 img {
-    -webkit-clip-path: none;
-            clip-path: none;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
   }
 }/*# sourceMappingURL=style.css.map */
