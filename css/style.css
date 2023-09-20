@@ -555,4 +555,55 @@ main .container .imgitem img {
 }
 #plans .container4 .card #middle p {
   padding: 2px;
+}
+
+footer {
+  margin-inline: auto;
+  text-align: center;
+  height: auto;
+  background-color: var(--gray);
+  padding-top: 20px;
+}
+footer h4 {
+  color: rgb(87, 87, 87);
+}
+
+hr {
+  display: block;
+  max-width: 1540px;
+  height: 2px;
+  margin: auto !important;
+  border: 0;
+  border-top: 1px solid var(--base-text-color);
+  padding: 0;
+}
+
+p {
+  color: var(--base-text-color);
+}
+
+.footerflexcontainer {
+  display: flex;
+  flex-direction: row;
+  max-width: 1000px;
+  flex-wrap: wrap;
+  margin-inline: auto;
+  justify-content: space-between;
+}
+.footerflexcontainer .section {
+  padding: 20px;
+}
+.footerflexcontainer .section h5 {
+  color: var(--black);
+  text-align: left;
+  margin-bottom: 5px;
+}
+.footerflexcontainer .section li {
+  text-align: left;
+  text-decoration: none;
+  list-style: none;
+}
+.footerflexcontainer .section li a {
+  text-decoration: none;
+  color: var(--green);
 }/*# sourceMappingURL=style.css.map */
