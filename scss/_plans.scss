@@ -1,0 +1,138 @@
+#plans {
+height: auto;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+
+    h1 {
+        font-weight: 100;
+        text-align: center;
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+
+.container4 {
+    display: flex;
+    height: fit-content;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-inline: 20px;
+    max-width: 1000px;
+margin-inline: auto;
+
+@media screen and (max-width: 900px) {
+    flex-direction: column;
+    padding-inline: 0px;
+    max-width: 80%;
+    align-items: center;
+
+}
+    .card {
+        width: 33.33%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        border: 1px solid var(--green);
+        max-height: 500px;
+        height: 300px;
+        background-color: var(--gray);
+        border-radius: 4px;
+        margin-inline: 20px;
+        padding: 10px;
+
+        @media screen and (max-width: 900px) {
+            width: 100%;
+            height: fit-content;
+            margin-inline: 0px;
+            margin-bottom: 20px ;
+        }
+
+        h4 {
+            padding: 10px;
+            font-size: 20px;
+            letter-spacing: 1px;
+        }
+
+        h2 {
+            padding: 10px;
+            font-size: 40px;
+        }
+
+        h5 {
+            padding: 5px;
+            font-size: 15px;
+        }
+
+        p {
+            padding: 2px;
+        }
+
+
+        .buy {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 15px;
+cursor: pointer;
+            width: fit-content;
+            margin-inline: auto;
+            background-color: var(--green);
+            border: none;
+            border-radius: 10px;
+            color: var(--bg-white);
+        }
+
+        h4 {
+            text-transform: uppercase;
+        }
+
+        #middle {
+            background-color: var(--green);
+            display: flex;
+            flex-direction: column;
+            transform: scale(1.15);
+            justify-content: center;
+            text-align: center;
+            max-height: 500px;
+            height: 300px;
+            border: 1px solid var(--black);
+            border-radius: 4px;
+
+            .buy {
+              
+                background-color: var(--gray);
+                border: none;
+                border-radius: 10px;
+                color: var(--green);
+            }
+
+
+        h4 {
+            padding: 10px;
+            font-size: 20px;
+            letter-spacing: 1px;
+            color: var(--bg-white);
+        }
+
+        h2 {
+            padding: 10px;
+            font-size: 40px;
+            color: var(--bg-white);
+        }
+
+        h5 {
+            padding: 5px;
+            font-size: 15px;
+            color: var(--gray);
+        }
+
+        p {
+            padding: 2px;
+        }
+           
+            
+        }
+    }
+
+}
+
+}
