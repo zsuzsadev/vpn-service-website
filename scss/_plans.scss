@@ -8,6 +8,7 @@ height: auto;
         text-align: center;
         font-size: 50px;
         margin-bottom: 30px;
+text-transform: uppercase;        
     }
 
 .container4 {
@@ -35,10 +36,10 @@ margin-inline: auto;
         border: 1px solid var(--green);
         max-height: 500px;
         height: 300px;
-        background-color: var(--gray);
-        border-radius: 4px;
+        border-radius: 20px;
         margin-inline: 20px;
         padding: 10px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 
         @media screen and (max-width: 900px) {
             width: 100%;
@@ -51,6 +52,7 @@ margin-inline: auto;
             padding: 10px;
             font-size: 20px;
             letter-spacing: 1px;
+            font-weight: 100;
         }
 
         h2 {
@@ -77,7 +79,7 @@ cursor: pointer;
             margin-inline: auto;
             background-color: var(--green);
             border: none;
-            border-radius: 10px;
+            border-radius: 20px;
             color: var(--bg-white);
         }
 
@@ -95,13 +97,13 @@ cursor: pointer;
             max-height: 500px;
             height: 300px;
             border: 1px solid var(--black);
-            border-radius: 4px;
-
+            border-radius: 20px;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
             .buy {
               
                 background-color: var(--gray);
                 border: none;
-                border-radius: 10px;
+                border-radius: 20px;
                 color: var(--green);
             }
 
@@ -127,6 +129,7 @@ cursor: pointer;
 
         p {
             padding: 2px;
+            
         }
            
             

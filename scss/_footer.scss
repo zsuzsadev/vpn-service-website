@@ -1,3 +1,10 @@
+#owner {
+
+    a{
+        color: var(--green);
+    }
+}
+
 footer {
     margin-inline: auto;
     text-align: center;
@@ -40,6 +47,8 @@ justify-content: space-between;
 
     padding: 20px;
 
+
+
     h5 {
         color: var(--black);
         text-align: left;
@@ -50,6 +59,7 @@ justify-content: space-between;
         text-align: left;
 text-decoration: none;
 list-style: none;
+
         a {
             text-decoration: none;
  color: var(--green);
