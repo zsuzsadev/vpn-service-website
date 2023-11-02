@@ -6,10 +6,12 @@
 }
 
 footer {
+    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+
     margin-inline: auto;
     text-align: center;
     height: auto;
-    background-color: var(--gray);
+    background-color: rgb(187, 187, 187);
     padding-top: 20px;
 
 

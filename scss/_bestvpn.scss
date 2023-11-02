@@ -1,16 +1,19 @@
 #bestvpn {
     text-align: center;
-    max-width: 1540px;
     height:auto;
+    background-color: var(--black);
     margin-inline: auto;
     padding-inline: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+
 
     h1 {
         font-size: 60px;
         font-weight: 100;
         padding-bottom: 30px;
+        color: var(--bg-white);
         text-transform: uppercase;
     }
 
@@ -32,9 +35,8 @@
 
 
     .textitem3 {
-        width:50%;
+        width:60%;
         background-color: var(--green);
-        clip-path: polygon(0 0, 95% 0, 100% 100%, 0 100%);
         display: flex;
         align-items: center;
         padding: 30px;
@@ -60,12 +62,14 @@
 
     .imgitem3 {
 
-        width: 50%;
+        width: 40%;
+        padding-left: 20px;
 
         @media screen and (max-width: 1000px) {
             width: 100%;
             height: 50%;
             margin-top: 5px;
+            padding-left: 0;
 
              }
 
@@ -73,7 +77,6 @@
         object-fit: contain;
         max-height: 100%;
         width:100%;
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 5% 100%);
 
 
         @media screen and (max-width: 1000px) {
