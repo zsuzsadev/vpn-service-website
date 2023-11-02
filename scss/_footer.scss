@@ -16,7 +16,7 @@ footer {
 
 
     h4 {
-        color: rgb(87, 87, 87);
+        color: var(--black);
     }
 }
 
@@ -64,7 +64,7 @@ list-style: none;
 
         a {
             text-decoration: none;
- color: var(--green);
+ color: var(--black);
         }
     }
 }
